@@ -32,7 +32,7 @@ def _start(client, message):
 @Client.on_message(filters.command(["start","start@VCsMusicBot"]) & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
-        f"""**{PROJECT_NAME} is online.**""",
+        f"""**{PROJECT_NAME} çevrimiçi.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
